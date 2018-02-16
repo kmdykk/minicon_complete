@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-  PER = 5
+  PER = 3
   
   def index
     @events = Event.page(params[:page]).per(PER)
